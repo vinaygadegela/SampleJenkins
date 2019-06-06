@@ -14,14 +14,13 @@ public class VoteTest {
 
     public VoteTest(){
         driver = new ChromeDriver();
-        driver.get("https://connected.nielsen.com");
+        driver.get("https://www.facebook.com/");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     @Test
     public void voteforBaby(){
-        driver.findElement(By.cssSelector("input#v")).sendKeys("WrongDetails");
-        driver.findElement(By.cssSelector("a#vote_btn")).click();
+    	System.out.println("hi");
     }
     
     @AfterTest
